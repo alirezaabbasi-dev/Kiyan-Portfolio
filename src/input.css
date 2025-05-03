@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
-@theme{
-    --color-P-green:oklch(0.64 0.23 138.13);
+@theme {
+  
 }
 @utility container {
-@apply mx-auto;
+    @apply mx-auto px-6;
 }
-body{
+body {
     @apply bg-slate-900 text-zinc-50;
 }
-section{
-    @apply mt-9
+section {
+    @apply mt-9;
 }

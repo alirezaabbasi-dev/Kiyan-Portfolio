@@ -44,9 +44,9 @@
     <header class="">
         <!-- Menu Wrapper-->
         <div
-            class="container flex justify-between items-center p-4 bg-slate-800/20 backdrop-blur-2xl rounded-b-2xl fixed inset-0 bottom-auto z-50 ">
+            class="container flex justify-between items-center p-4 bg-slate-400/20 backdrop-blur-md rounded-b-2xl fixed inset-0 bottom-auto z-50 ">
             <!-- Menu Icon -->
-            <div class="text-3xl text-P-green">
+            <div class="text-3xl text-slate-400">
                 <h2>
                     <a href="">Kiyan</a>
                 </h2>
@@ -89,17 +89,24 @@
 
         </div>
         <!-- main wrapper -->
-        <section id="particle-js" class="bg-slate-950 relative !mt-0 ">
+        <section id="particle-js" class="bg-slate-950 relative h-screen !mt-0 ">
             <div
-                class="container pointer-events-none absolute inset-0  flex justify-between items-center m-auto w-max h-max   ">
+                class="container pointer-events-none absolute inset-0  flex flex-col lg:flex-row justify-between items-center m-auto  h-max mt-48 lg:mt-auto   ">
                 <div class="overflow-hidden rounded-full border-3 border-slate-50 shadow-xl shadow-blue-300 ">
-                    <img class="" src="./public/images/Kiyan-Pic.jpg" alt="">
+                    <img id="profile-pic" class="" src="./public/images/Kiyan-Pic.jpg" alt="">
                 </div>
                 <div class="w-1/2 flex flex-col gap-4">
-                    <h3 class="text-slate-400 text-7xl">Hi There ...</h3>
-                    <p class="text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-                        ducimus possimus atque maxime illo animi tempora aut hic reiciendis illum. Minus amet libero
-                        ducimus ab error beatae! Fugit, provident expedita?</p>
+                    <h3 id="head-text" class="text-slate-400 text-7xl">Hi There ...</h3>
+                    <p class="text-slate-400 text-justify tracking-[2px] leading-6"> I'm really passionate about
+                        programming and technology. I love building
+                        things, solving problems, and constantly learning new stuff. So far, I've learned HTML, CSS
+                        (including Flexbox and Grid), and I'm confident with JavaScript as well. I've also been diving
+                        into Git for version control and recently started learning React to take my frontend skills to
+                        the next level.
+
+                        Programming has become more than just a hobby for me — it's something I enjoy doing every day,
+                        and I'm always looking for ways to improve and grow as a developer. I'm especially interested in
+                        web development and working on personal projects that challenge me and help me learn.</p>
                 </div>
             </div>
         </section>
@@ -114,7 +121,7 @@
                 </div>
                 <!-- skills wrapper -->
                 <div id="skills-container"
-                    class="mt-15 items-center  grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-4 lg:gap-6 *:hover:-translate-y-2 *:transition-transform">
+                    class="mt-15 items-center grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-4 lg:gap-6 *:hover:-translate-y-2 *:hover:shadow-2xl *:transition-all ">
                     <!-- skills items -->
                 </div>
             </div>
@@ -133,6 +140,27 @@
     <script>
         /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
         particlesJS.load("particle-js", "./packages/scripts/particle.json")
+    </script>
+    <script src="./packages/scripts/typewriter.min.js"></script>
+    <script>
+        let app = document.getElementById('head-text');
+
+        let typewriter = new Typewriter(app, {
+            loop: true,
+            delay: 75,
+        });
+
+        typewriter
+
+            .typeString('Hi There . . .')
+            .pauseFor(2500)
+            .deleteChars(5)
+            .typeString('<strong  class="text-red-500">I\'m Kiyan Abbasi</strong>')
+            .pauseFor(1000)
+            .deleteChars(29)
+            .typeString('<strong>front-end Developer. </strong>')
+            .pauseFor(2000)
+            .start();
     </script>
     <script src="./public/js/app.js"></script>
 </body>
