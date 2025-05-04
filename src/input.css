@@ -4,7 +4,7 @@
   
 }
 @utility container {
-    @apply mx-auto px-6;
+    @apply mx-auto px-1.5 md:px-6;
 }
 body {
     @apply bg-slate-900 text-zinc-50;
