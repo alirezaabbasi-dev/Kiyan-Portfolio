@@ -14,7 +14,6 @@
     --color-slate-50: oklch(98.4% 0.003 247.858);
     --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-slate-400: oklch(70.4% 0.04 256.788);
-    --color-slate-500: oklch(55.4% 0.046 257.417);
     --color-slate-600: oklch(44.6% 0.043 257.281);
     --color-slate-700: oklch(37.2% 0.044 257.287);
     --color-slate-800: oklch(27.9% 0.041 260.031);
@@ -27,8 +26,6 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --radius-xl: 0.75rem;
@@ -289,6 +286,9 @@
   .h-85 {
     height: calc(var(--spacing) * 85);
   }
+  .h-225 {
+    height: calc(var(--spacing) * 225);
+  }
   .h-\[70\%\] {
     height: 70%;
   }
@@ -306,9 +306,6 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-full {
-    width: 100%;
   }
   .max-w-160 {
     max-width: calc(var(--spacing) * 160);
@@ -352,9 +349,6 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
-  .self-center {
-    align-self: center;
-  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -389,56 +383,8 @@
   .border-slate-300 {
     border-color: var(--color-slate-300);
   }
-  .bg-slate-400 {
-    background-color: var(--color-slate-400);
-  }
-  .bg-slate-400\/20 {
-    background-color: color-mix(in srgb, oklch(70.4% 0.04 256.788) 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-slate-400) 20%, transparent);
-    }
-  }
-  .bg-slate-400\/40 {
-    background-color: color-mix(in srgb, oklch(70.4% 0.04 256.788) 40%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-slate-400) 40%, transparent);
-    }
-  }
-  .bg-slate-500 {
-    background-color: var(--color-slate-500);
-  }
-  .bg-slate-500\/10 {
-    background-color: color-mix(in srgb, oklch(55.4% 0.046 257.417) 10%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-slate-500) 10%, transparent);
-    }
-  }
-  .bg-slate-500\/20 {
-    background-color: color-mix(in srgb, oklch(55.4% 0.046 257.417) 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-slate-500) 20%, transparent);
-    }
-  }
-  .bg-slate-500\/40 {
-    background-color: color-mix(in srgb, oklch(55.4% 0.046 257.417) 40%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-slate-500) 40%, transparent);
-    }
-  }
   .bg-slate-600 {
     background-color: var(--color-slate-600);
-  }
-  .bg-slate-600\/40 {
-    background-color: color-mix(in srgb, oklch(44.6% 0.043 257.281) 40%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-slate-600) 40%, transparent);
-    }
-  }
-  .bg-slate-600\/60 {
-    background-color: color-mix(in srgb, oklch(44.6% 0.043 257.281) 60%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-slate-600) 60%, transparent);
-    }
   }
   .bg-slate-800 {
     background-color: var(--color-slate-800);
@@ -457,9 +403,6 @@
   }
   .object-contain {
     object-fit: contain;
-  }
-  .object-cover {
-    object-fit: cover;
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -480,10 +423,6 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
@@ -610,16 +549,6 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  .sm\:object-contain {
-    @media (width >= 40rem) {
-      object-fit: contain;
-    }
-  }
-  .sm\:object-cover {
-    @media (width >= 40rem) {
-      object-fit: cover;
-    }
-  }
   .sm\:text-4xl {
     @media (width >= 40rem) {
       font-size: var(--text-4xl);
@@ -672,6 +601,9 @@
       line-height: var(--tw-leading, var(--text-7xl--line-height));
     }
   }
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: var(--color-slate-900);

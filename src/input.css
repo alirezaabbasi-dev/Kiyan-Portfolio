@@ -6,6 +6,9 @@
 @utility container {
     @apply mx-auto px-1.5 md:px-6;
 }
+html{
+    scroll-behavior: smooth
+}
 body {
     @apply bg-slate-900 text-zinc-50;
 }
