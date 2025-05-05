@@ -42,52 +42,28 @@
     </svg>
     <!-- Header -->
     <header class="">
-        <!-- Menu Wrapper-->
-        <div
-            class="container flex justify-between items-center p-4 bg-slate-800/60 backdrop-blur-md rounded-b-2xl fixed inset-0 bottom-auto z-50 ">
-            <!-- Menu Icon -->
-            <div class="text-3xl text-slate-400">
-                <h2>
-                    <a href="">Kiyan</a>
-                </h2>
+        <!-- Header Navigation -->
+        <section class="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-slate-900/70 shadow-md !mt-0">
+            <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#"
+                    class="text-2xl sm:text-3xl font-bold tracking-wide text-white hover:text-blue-400 transition-colors">
+                    Kiyan
+                </a>
+                <!-- Main Navigation -->
+                <nav>
+                    <ul
+                        class="flex items-center gap-6 text-slate-300 text-sm sm:text-base font-medium *:hover:text-blue-400 *:transition-colors">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <!-- Menu Items-->
-            <div>
-                <ul class="*:text-blue-400 *:hover:text-blue-600 *:transition-colors flex items-center gap-2.5 ">
-                    <li>
-                        <a href="http://github.com/alirezaabbasi-dev" title="github" target="_blank">
-                            <svg class="size-6">
-                                <use href="#github"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:alirezaabbasi001@outlook.com" title="contact to me">
-                            <svg class="size-7">
-                                <use href="#mail"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg class="size-6">
-                                <use href="#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/kiyan_abbasi_dev" title="Telegram" target="_blank">
-                            <svg class="size-8">
-                                <use href="#telegram"></use>
-                            </svg>
-                        </a>
-                    </li>
+        </section>
 
 
-                </ul>
-            </div>
-
-        </div>
         <!-- header content wrapper -->
         <section id="particle-js" class="bg-slate-950 relative h-225 sm:h-screen !mt-0 ">
             <div
@@ -131,14 +107,66 @@
                 </div>
             </div>
         </section>
+        <section id="Projects">
+
+        </section>
     </main>
     <!-- Footer -->
-    <footer>
-        <section>
-            <div class="border-t border-slate-300 text-center">
-                <p class="my-2.5"> © 2025 created with ❤️ by Kiyan Abbasi.</p>
+    <footer id="about" class="bg-gradient-to-t from-slate-900 to-slate-950 text-slate-300 pt-12 pb-6 border-t border-slate-700">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- About -->
+            <div>
+                <h4 class="text-xl font-semibold text-white mb-4">About Me</h4>
+                <p class="text-sm leading-6">
+                    I'm Kiyan Abbasi, a passionate frontend developer focused on modern web design and creative coding.
+                    I love learning, building, and sharing ideas.
+                </p>
             </div>
-        </section>
+
+            <!-- Navigation Links -->
+            <div>
+                <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#skills" class="hover:text-blue-400 transition-colors">My Skills</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-xl font-semibold text-white mb-4">Follow Me</h4>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="http://github.com/alirezaabbasi-dev" target="_blank" title="GitHub"
+                        class="hover:text-white">
+                        <svg class="w-6 h-6 fill-current text-slate-400 hover:text-blue-400 transition-colors">
+                            <use href="#github" />
+                        </svg>
+                    </a>
+                    <a href="mailto:alirezaabbasi001@outlook.com" title="Email" class="hover:text-white">
+                        <svg class="w-6 h-6 fill-current text-slate-400 hover:text-blue-400 transition-colors">
+                            <use href="#mail" />
+                        </svg>
+                    </a>
+                    <a href="#" title="Instagram" class="hover:text-white">
+                        <svg class="w-6 h-6 fill-current text-slate-400 hover:text-pink-400 transition-colors">
+                            <use href="#instagram" />
+                        </svg>
+                    </a>
+                    <a href="https://t.me/kiyan_abbasi_dev" target="_blank" title="Telegram" class="hover:text-white">
+                        <svg class="w-6 h-6 fill-current text-slate-400 hover:text-blue-500 transition-colors">
+                            <use href="#telegram" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-10 border-t border-slate-700 pt-4 text-center text-sm text-slate-500">
+            <p>© 2025 Created with ❤️ by <span class="text-white font-medium">Kiyan Abbasi</span>. All rights reserved.
+            </p>
+        </div>
     </footer>
     <!-- Scripts -->
     <script src="./packages/scripts/particle.min.js"></script>

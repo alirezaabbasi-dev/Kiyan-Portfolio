@@ -1,7 +1,15 @@
+@font-face {
+    font-family: "inter";
+    src: url("../fonts/Inter/Inter_28pt-Regular.ttf"),format("truetype");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf"),format("truetype");
+}
 @import "tailwindcss";
 
 @theme {
-  
+  --font-poppins:"inter"
 }
 @utility container {
     @apply mx-auto px-1.5 md:px-6;
@@ -10,7 +18,9 @@ html{
     scroll-behavior: smooth
 }
 body {
-    @apply bg-slate-900 text-zinc-50;
+    @apply bg-slate-900 text-zinc-50 font-poppins;
+    
+    
 }
 section {
     @apply mt-9;
