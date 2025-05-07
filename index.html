@@ -47,7 +47,7 @@
             <div class="container mx-auto px-6 py-4 flex items-center justify-between">
                 <!-- Logo -->
                 <a href="#"
-                    class="text-2xl sm:text-3xl font-bold tracking-wide text-white hover:text-blue-400 transition-colors">
+                    class="text-2xl sm:text-3xl font-bold tracking-wider text-white hover:text-blue-400 transition-colors">
                     Kiyan
                 </a>
                 <!-- Main Navigation -->
@@ -71,23 +71,11 @@
                 <div class="overflow-hidden rounded-full border-3 border-slate-50 shadow-xl shadow-blue-300 ">
                     <img id="profile-pic" class="" src="./public/images/Kiyan-Pic.jpg" alt="User Picture">
                 </div>
-                <div class="w-1/2 flex flex-col gap-4">
+                <div class="w-1/2 flex">
                     <h3 id="head-text"
-                        class="text-slate-400 text-3xl sm:text-4xl h-20 lg:h-36 mt-20 lg:mt-auto  lg:text-7xl">Hi
+                        class="text-slate-400 text-center text-4xl sm:text-4xl lg:h-36 mt-20 lg:mt-auto lg:text-7xl lg:leading-22">
+                        Hi
                         There ...</h3>
-                    <p
-                        class="hidden sm:block text-slate-400 text-justify tracking-[1.5px] leading-5.5 overflow-ellipsis">
-                        I'm really
-                        passionate about
-                        programming and technology. I love building
-                        things, solving problems, and constantly learning new stuff. So far, I've learned HTML, CSS
-                        (including Flexbox and Grid), and I'm confident with JavaScript as well. I've also been diving
-                        into Git for version control and recently started learning React to take my frontend skills to
-                        the next level.
-
-                        Programming has become more than just a hobby for me — it's something I enjoy doing every day,
-                        and I'm always looking for ways to improve and grow as a developer. I'm especially interested in
-                        web development and working on personal projects that challenge me and help me learn.</p>
                 </div>
             </div>
         </section>
@@ -98,26 +86,48 @@
         <section id="skills">
             <div class="container">
                 <div>
-                    <h3 class="text-center text-4xl">My Skills</h3>
+                    <h3 class="section-head-text">My Skills</h3>
                 </div>
                 <!-- skills wrapper -->
                 <div id="skills-container"
-                    class="mt-15 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  md:gap-4 lg:gap-6  *:hover:-translate-y-2 *:hover:shadow-2xl *:transition-all  ">
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  md:gap-4 lg:gap-6  *:hover:-translate-y-2 *:hover:shadow-2xl *:transition-all  ">
                     <!-- skills items -->
                 </div>
             </div>
         </section>
-        <section id="Projects">
+        <!-- <section id="Projects">
 
+        </section> -->
+        <section class="border-none bg-gradient-to-t" id="about">
+            <div class="container px-20">
+                <div>
+                    <h3 class="section-head-text ">About Me</h3>
+                </div>
+                <p
+                    class="sm:block font-BebasNeue-Regular text-slate-300 text-justify tracking-wide leading-7 overflow-ellipsis">
+                    I'm really
+                    passionate about
+                    programming and technology. I love building
+                    things, solving problems, and constantly learning new stuff. So far, I've learned HTML, CSS
+                    (including Flexbox and Grid), and I'm confident with JavaScript as well. I've also been diving
+                    into Git for version control and recently started learning React to take my frontend skills to
+                    the next level.
+
+                    Programming has become more than just a hobby for me — it's something I enjoy doing every day,
+                    and I'm always looking for ways to improve and grow as a developer. I'm especially interested in
+                    web development and working on personal projects that challenge me and help me learn.
+                </p>
+            </div>
         </section>
     </main>
     <!-- Footer -->
-    <footer id="about" class="bg-gradient-to-t from-slate-900 to-slate-950 text-slate-300 pt-12 pb-6 border-t border-slate-700">
+    <footer id="about"
+        class="bg-gradient-to-t from-slate-900 to-slate-950 text-slate-300 pt-12 pb-6 border-t-1 border-slate-700">
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <!-- About -->
             <div>
-                <h4 class="text-xl font-semibold text-white mb-4">About Me</h4>
-                <p class="text-sm leading-6">
+                <h4 class="footer-items-head-text">About Me</h4>
+                <p class="text-sm leading-6 text-slate-400">
                     I'm Kiyan Abbasi, a passionate frontend developer focused on modern web design and creative coding.
                     I love learning, building, and sharing ideas.
                 </p>
@@ -125,7 +135,7 @@
 
             <!-- Navigation Links -->
             <div>
-                <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+                <h4 class="footer-items-head-text">Quick Links</h4>
                 <ul class="space-y-2 text-sm">
                     <li><a href="#skills" class="hover:text-blue-400 transition-colors">My Skills</a></li>
                     <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
@@ -135,16 +145,16 @@
 
             <!-- Social Media -->
             <div>
-                <h4 class="text-xl font-semibold text-white mb-4">Follow Me</h4>
-                <div class="flex justify-center md:justify-start gap-4">
+                <h4 class="footer-items-head-text">Follow Me</h4>
+                <div class="flex items-center justify-center md:justify-start gap-4">
                     <a href="http://github.com/alirezaabbasi-dev" target="_blank" title="GitHub"
                         class="hover:text-white">
-                        <svg class="w-6 h-6 fill-current text-slate-400 hover:text-blue-400 transition-colors">
+                        <svg class="w-6 h-6 fill-current text-slate-400 hover:text-zinc-600 transition-colors">
                             <use href="#github" />
                         </svg>
                     </a>
                     <a href="mailto:alirezaabbasi001@outlook.com" title="Email" class="hover:text-white">
-                        <svg class="w-6 h-6 fill-current text-slate-400 hover:text-blue-400 transition-colors">
+                        <svg class="w-8 h-8 fill-current text-slate-400 hover:text-sky-500 transition-colors">
                             <use href="#mail" />
                         </svg>
                     </a>
@@ -154,7 +164,7 @@
                         </svg>
                     </a>
                     <a href="https://t.me/kiyan_abbasi_dev" target="_blank" title="Telegram" class="hover:text-white">
-                        <svg class="w-6 h-6 fill-current text-slate-400 hover:text-blue-500 transition-colors">
+                        <svg class="w-8 h-8 fill-current text-slate-400 hover:text-blue-600 transition-colors">
                             <use href="#telegram" />
                         </svg>
                     </a>
@@ -188,10 +198,10 @@
             .typeString('Hi There . . .')
             .pauseFor(2500)
             .deleteChars(5)
-            .typeString('<strong  class="text-red-500">I\'m Kiyan Abbasi</strong>')
+            .typeString('<strong class="text-red-500">I\'m Kiyan Abbasi</strong>')
             .pauseFor(1000)
             .deleteChars(29)
-            .typeString('<strong>front-end Developer. </strong>')
+            .typeString('<strong>front-end Developer.</strong>')
             .pauseFor(2000)
             .start();
     </script>

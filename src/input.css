@@ -1,27 +1,43 @@
+/* Font Faces */
 @font-face {
     font-family: "inter";
-    src: url("../fonts/Inter/Inter_28pt-Regular.ttf"),format("truetype");
+    src: local("inter-Regular"), url("../fonts/Inter/Inter_28pt-Regular.ttf"), format("truetype");
 }
 @font-face {
     font-family: "Poppins";
-    src: url("../fonts/Poppins/Poppins-Regular.ttf"),format("truetype");
+    src: local("Poppins-Regular"), url("../fonts/Poppins/Poppins-Regular.ttf"), format("truetype");
 }
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: local("BebasNeue-Regular"), url("../fonts/BebasNeue/BebasNeue-Regular"), format("truetype");
+}
+/* Tailwind Configs */
 @import "tailwindcss";
 
 @theme {
-  --font-poppins:"inter"
+    --font-poppins: "Poppins";
+    --font-inter: "inter";
+    --font-BebasNeue-Regular: "BebasNeue-Regular";
 }
 @utility container {
     @apply mx-auto px-1.5 md:px-6;
 }
-html{
-    scroll-behavior: smooth
+html {
+    scroll-behavior: smooth;
 }
 body {
     @apply bg-slate-900 text-zinc-50 font-poppins;
-    
-    
 }
 section {
-    @apply mt-9;
+    @apply my-15;
+}
+main section {
+    @apply pb-12 border-b-1 border-slate-700;
+}
+/* Components */
+.section-head-text {
+    @apply font-inter font-light text-center text-5xl text-slate-500 mb-15;
+}
+.footer-items-head-text {
+    @apply text-xl font-semibold text-slate-300 mb-4;
 }
