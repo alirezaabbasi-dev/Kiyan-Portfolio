@@ -3,50 +3,53 @@
     {
       "name": "HTML",
       "level": "advanced",
-      "src": "./public/images/Skills/html-logo.png",
+      "src": "../public/images/Skills/html-logo.png",
       "subskills": [],
       "tools": ["Emmet"]
     },
     {
       "name": "CSS",
       "level": "advanced",
-      "src": "./public/images/Skills/CSS3_logo.png",
+      "src": "../public/images/Skills/CSS3_logo.png",
       "subskills": ["Flexbox", "Grid"],
       "tools": []
     },
     {
       "name": "JavaScript",
       "level": "advanced",
-      "src": "./public/images//Skills/JavaScript-logo.png",
+      "src": "../public/images/Skills/JavaScript-logo.png",
       "subskills": ["DOM", "ES6", "async/await", "fetch API"],
       "tools": []
     },
-
     {
       "name": "React",
       "level": "learning",
-      "src": "./public/images/Skills/React_icon.png",
+      "src": "../public/images/Skills/React_icon.png",
       "subskills": ["components", "props", "hooks"],
       "tools": []
     },
     {
       "name": "Tailwind",
       "level": "advanced",
-      "src": "./public/images/Skills/tailwindcss-logo.png",
+      "src": "../public/images/Skills/tailwindcss-logo.png",
       "subskills": [],
       "tools": []
     },
     {
       "name": "VS Code",
-      "src": "./public/images//Skills/Visual_Studio_Code_logo.png"
+      "src": "../public/images/Skills/Visual_Studio_Code_logo.png"
     },
     {
       "name": "Git",
-      "src": "./public/images//Skills/Git_icon.png"
+      "src": "../public/images/Skills/Git_icon.png"
     },
     {
       "name": "Figma",
-      "src": "./public/images//Skills/figma_icon.png"
+      "src": "../public/images/Skills/figma_icon.png"
+    },
+    {
+      "name": "NPM",
+      "src": "../public/images/Skills/npm-logo.png"
     }
   ]
 }

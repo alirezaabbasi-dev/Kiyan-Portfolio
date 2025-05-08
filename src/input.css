@@ -18,6 +18,8 @@
     --font-poppins: "Poppins";
     --font-inter: "inter";
     --font-BebasNeue-Regular: "BebasNeue-Regular";
+
+    --color-blue-350:#42A5F5;
 }
 @utility container {
     @apply mx-auto px-1.5 md:px-6;
@@ -35,9 +37,11 @@ main section {
     @apply pb-12 border-b-1 border-slate-700;
 }
 /* Components */
-.section-head-text {
-    @apply font-inter font-light text-center text-5xl text-slate-500 mb-15;
-}
-.footer-items-head-text {
-    @apply text-xl font-semibold text-slate-300 mb-4;
+@layer components {
+    .section-head-text {
+        @apply font-inter font-light text-center text-5xl text-slate-500 mb-15;
+    }
+    .footer-items-head-text {
+        @apply text-xl font-semibold text-slate-300 mb-4;
+    }
 }

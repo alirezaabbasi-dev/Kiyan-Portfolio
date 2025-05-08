@@ -47,13 +47,13 @@
             <div class="container mx-auto px-6 py-4 flex items-center justify-between">
                 <!-- Logo -->
                 <a href="#"
-                    class="text-2xl sm:text-3xl font-bold tracking-wider text-white hover:text-blue-400 transition-colors">
+                    class="font-inter text-2xl sm:text-3xl font-bold tracking-[.40rem] uppercase text-blue-200 hover:text-blue-500 transition-colors">
                     Kiyan
                 </a>
                 <!-- Main Navigation -->
                 <nav>
                     <ul
-                        class="flex items-center gap-6 text-slate-300 text-sm sm:text-base font-medium *:hover:text-blue-400 *:transition-colors">
+                        class="flex items-center gap-1 sm:gap-6 text-slate-300 text-sm sm:text-base font-medium *:hover:text-blue-400 *:transition-colors">
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
@@ -67,11 +67,12 @@
         <!-- header content wrapper -->
         <section id="particle-js" class="bg-slate-950 relative h-225 sm:h-screen !mt-0 ">
             <div
-                class="container pointer-events-none absolute inset-0  flex flex-col lg:flex-row justify-between items-center m-auto h-max mt-48 lg:mt-auto">
-                <div class="overflow-hidden rounded-full border-3 border-slate-50 shadow-xl shadow-blue-300 ">
-                    <img id="profile-pic" class="" src="./public/images/Kiyan-Pic.jpg" alt="User Picture">
+                class="container pointer-events-none absolute inset-0  flex flex-col gap-4 lg:flex-row justify-between items-center m-auto h-max mt-48 lg:mt-auto">
+                <div class="relative overflow-hidden rounded-full border-3 border-blue-300 shadow-xl shadow-slate-400 ">
+                    <img class="" id="profile-pic" src="./public/images/Kiyan-Pic.jpg" alt="User Picture">
+                    <span class="block absolute top-0 right-0 left-0 bottom-0 size-full bg-blue-350/5"></span>
                 </div>
-                <div class="w-1/2 flex">
+                <div class="w-1/2 ">
                     <h3 id="head-text"
                         class="text-slate-400 text-center text-4xl sm:text-4xl lg:h-36 mt-20 lg:mt-auto lg:text-7xl lg:leading-22">
                         Hi
