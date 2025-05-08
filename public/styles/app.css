@@ -314,9 +314,13 @@
   .hidden {
     display: none;
   }
-  .size-fit {
-    width: fit-content;
-    height: fit-content;
+  .size-28 {
+    width: calc(var(--spacing) * 28);
+    height: calc(var(--spacing) * 28);
+  }
+  .size-32 {
+    width: calc(var(--spacing) * 32);
+    height: calc(var(--spacing) * 32);
   }
   .size-full {
     width: 100%;
@@ -327,6 +331,9 @@
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
+  }
+  .h-28 {
+    height: calc(var(--spacing) * 28);
   }
   .h-85 {
     height: calc(var(--spacing) * 85);
@@ -352,6 +359,9 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-full {
+    width: 100%;
+  }
   .max-w-160 {
     max-width: calc(var(--spacing) * 160);
   }
@@ -373,11 +383,20 @@
   .items-center {
     align-items: center;
   }
+  .items-end {
+    align-items: flex-end;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
@@ -410,6 +429,10 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
+  .rounded-b-full {
+    border-bottom-right-radius: calc(infinity * 1px);
+    border-bottom-left-radius: calc(infinity * 1px);
+  }
   .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -439,37 +462,10 @@
   .border-slate-700 {
     border-color: var(--color-slate-700);
   }
-  .bg-blue-350 {
-    background-color: var(--color-blue-350);
-  }
-  .bg-blue-350\/3 {
-    background-color: color-mix(in srgb, #42A5F5 3%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-blue-350) 3%, transparent);
-    }
-  }
-  .bg-blue-350\/4 {
-    background-color: color-mix(in srgb, #42A5F5 4%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-blue-350) 4%, transparent);
-    }
-  }
   .bg-blue-350\/5 {
     background-color: color-mix(in srgb, #42A5F5 5%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-blue-350) 5%, transparent);
-    }
-  }
-  .bg-blue-350\/8 {
-    background-color: color-mix(in srgb, #42A5F5 8%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-blue-350) 8%, transparent);
-    }
-  }
-  .bg-blue-350\/10 {
-    background-color: color-mix(in srgb, #42A5F5 10%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-blue-350) 10%, transparent);
     }
   }
   .bg-slate-900\/70 {

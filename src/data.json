@@ -5,51 +5,60 @@
       "level": "advanced",
       "src": "../public/images/Skills/html-logo.png",
       "subskills": [],
-      "tools": ["Emmet"]
+      "tools": ["Emmet"],
+      "reference": "https://en.wikipedia.org/wiki/HTML"
     },
     {
       "name": "CSS",
       "level": "advanced",
       "src": "../public/images/Skills/CSS3_logo.png",
       "subskills": ["Flexbox", "Grid"],
-      "tools": []
+      "tools": [],
+      "reference": "https://en.wikipedia.org/wiki/CSS"
     },
     {
       "name": "JavaScript",
       "level": "advanced",
       "src": "../public/images/Skills/JavaScript-logo.png",
       "subskills": ["DOM", "ES6", "async/await", "fetch API"],
-      "tools": []
+      "tools": [],
+      "reference": "https://en.wikipedia.org/wiki/JavaScript"
     },
     {
       "name": "React",
       "level": "learning",
       "src": "../public/images/Skills/React_icon.png",
       "subskills": ["components", "props", "hooks"],
-      "tools": []
+      "tools": [],
+      "reference": "https://en.wikipedia.org/wiki/React"
     },
     {
       "name": "Tailwind",
       "level": "advanced",
       "src": "../public/images/Skills/tailwindcss-logo.png",
       "subskills": [],
-      "tools": []
+      "tools": [],
+      "reference": "https://en.wikipedia.org/wiki/Tailwind_CSS"
     },
     {
       "name": "VS Code",
-      "src": "../public/images/Skills/Visual_Studio_Code_logo.png"
+      "src": "../public/images/Skills/Visual_Studio_Code_logo.png",
+      "reference": "https://en.wikipedia.org/wiki/Visual_Studio_Code"
     },
     {
       "name": "Git",
-      "src": "../public/images/Skills/Git_icon.png"
+      "src": "../public/images/Skills/Git_icon.png",
+      "reference": "https://en.wikipedia.org/wiki/Git"
     },
     {
       "name": "Figma",
-      "src": "../public/images/Skills/figma_icon.png"
+      "src": "../public/images/Skills/figma_icon.png",
+      "reference": "https://en.wikipedia.org/wiki/Figma"
     },
     {
       "name": "NPM",
-      "src": "../public/images/Skills/npm-logo.png"
+      "src": "../public/images/Skills/npm-logo.png",
+      "reference": "https://en.wikipedia.org/wiki/Npm"
     }
   ]
 }
