@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: "BebasNeue-Regular";
-    src: local("BebasNeue-Regular"), url("../fonts/BebasNeue/BebasNeue-Regular"), format("truetype");
+    src: local("BebasNeue-Regular"), url("../fonts/BebasNeue/BebasNeue-Regular.ttf"), format("truetype");
 }
 /* Tailwind Configs */
 @import "tailwindcss";
@@ -39,7 +39,7 @@ main section {
 /* Components */
 @layer components {
     .section-head-text {
-        @apply font-inter font-light text-center text-5xl text-slate-500 mb-15;
+        @apply font-BebasNeue-Regular tracking-wide font-light text-center text-5xl text-slate-500 mb-15;
     }
     .footer-items-head-text {
         @apply text-xl font-semibold text-slate-300 mb-4;

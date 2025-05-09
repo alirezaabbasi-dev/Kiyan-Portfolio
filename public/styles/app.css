@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: "BebasNeue-Regular";
-  src: local("BebasNeue-Regular"), url("../fonts/BebasNeue/BebasNeue-Regular"), format("truetype");
+  src: local("BebasNeue-Regular"), url("../fonts/BebasNeue/BebasNeue-Regular.ttf"), format("truetype");
 }
 @layer theme, base, components, utilities;
 @layer theme {
@@ -61,6 +61,7 @@
     --font-weight-bold: 700;
     --tracking-wide: 0.025em;
     --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --blur-xl: 24px;
@@ -314,14 +315,6 @@
   .hidden {
     display: none;
   }
-  .size-28 {
-    width: calc(var(--spacing) * 28);
-    height: calc(var(--spacing) * 28);
-  }
-  .size-32 {
-    width: calc(var(--spacing) * 32);
-    height: calc(var(--spacing) * 32);
-  }
   .size-full {
     width: 100%;
     height: 100%;
@@ -331,9 +324,6 @@
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
-  }
-  .h-28 {
-    height: calc(var(--spacing) * 28);
   }
   .h-85 {
     height: calc(var(--spacing) * 85);
@@ -359,9 +349,6 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
-  .w-full {
-    width: 100%;
-  }
   .max-w-160 {
     max-width: calc(var(--spacing) * 160);
   }
@@ -383,20 +370,11 @@
   .items-center {
     align-items: center;
   }
-  .items-end {
-    align-items: flex-end;
-  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
-  }
-  .justify-end {
-    justify-content: flex-end;
-  }
-  .justify-start {
-    justify-content: flex-start;
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
@@ -428,10 +406,6 @@
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
-  }
-  .rounded-b-full {
-    border-bottom-right-radius: calc(infinity * 1px);
-    border-bottom-left-radius: calc(infinity * 1px);
   }
   .border-1 {
     border-style: var(--tw-border-style);
@@ -563,6 +537,10 @@
     --tw-leading: calc(var(--spacing) * 7);
     line-height: calc(var(--spacing) * 7);
   }
+  .leading-12 {
+    --tw-leading: calc(var(--spacing) * 12);
+    line-height: calc(var(--spacing) * 12);
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -582,6 +560,10 @@
   .tracking-wider {
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
+  }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
   }
   .overflow-ellipsis {
     text-overflow: ellipsis;
@@ -636,6 +618,22 @@
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .\*\:font-BebasNeue-Regular {
+    :is(& > *) {
+      font-family: var(--font-BebasNeue-Regular);
+    }
+  }
+  .\*\:text-\[16px\] {
+    :is(& > *) {
+      font-size: 16px;
+    }
+  }
+  .\*\:tracking-widest {
+    :is(& > *) {
+      --tw-tracking: var(--tracking-widest);
+      letter-spacing: var(--tracking-widest);
+    }
   }
   .\*\:transition-all {
     :is(& > *) {
@@ -772,6 +770,14 @@
       line-height: var(--tw-leading, var(--text-base--line-height));
     }
   }
+  .sm\:\*\:text-xl {
+    @media (width >= 40rem) {
+      :is(& > *) {
+        font-size: var(--text-xl);
+        line-height: var(--tw-leading, var(--text-xl--line-height));
+      }
+    }
+  }
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -856,11 +862,13 @@ main section {
   .section-head-text {
     margin-bottom: calc(var(--spacing) * 15);
     text-align: center;
-    font-family: var(--font-inter);
+    font-family: var(--font-BebasNeue-Regular);
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
     color: var(--color-slate-500);
   }
   .footer-items-head-text {

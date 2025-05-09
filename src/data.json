@@ -4,61 +4,101 @@
       "name": "HTML",
       "level": "advanced",
       "src": "../public/images/Skills/html-logo.png",
-      "subskills": [],
-      "tools": ["Emmet"],
-      "reference": "https://en.wikipedia.org/wiki/HTML"
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML"
     },
     {
       "name": "CSS",
       "level": "advanced",
       "src": "../public/images/Skills/CSS3_logo.png",
-      "subskills": ["Flexbox", "Grid"],
-      "tools": [],
-      "reference": "https://en.wikipedia.org/wiki/CSS"
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
       "name": "JavaScript",
       "level": "advanced",
       "src": "../public/images/Skills/JavaScript-logo.png",
-      "subskills": ["DOM", "ES6", "async/await", "fetch API"],
-      "tools": [],
-      "reference": "https://en.wikipedia.org/wiki/JavaScript"
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": "advanced",
+      "src": "../public/images/Skills/tailwindcss-logo.png",
+      "reference": "https://tailwindcss.com/"
     },
     {
       "name": "React",
       "level": "learning",
       "src": "../public/images/Skills/React_icon.png",
-      "subskills": ["components", "props", "hooks"],
-      "tools": [],
-      "reference": "https://en.wikipedia.org/wiki/React"
+      "reference": "https://react.dev/"
     },
     {
-      "name": "Tailwind",
-      "level": "advanced",
-      "src": "../public/images/Skills/tailwindcss-logo.png",
-      "subskills": [],
-      "tools": [],
-      "reference": "https://en.wikipedia.org/wiki/Tailwind_CSS"
-    },
+      "name": "Next JS",
+      "level": "learning",
+      "src": "../public/images/Skills/nextjs.jpeg",
+      "reference": "https://nextjs.org/"
+    }
+  ],
+  "tools": [
     {
       "name": "VS Code",
       "src": "../public/images/Skills/Visual_Studio_Code_logo.png",
-      "reference": "https://en.wikipedia.org/wiki/Visual_Studio_Code"
+      "reference": "https://code.visualstudio.com/"
     },
     {
       "name": "Git",
       "src": "../public/images/Skills/Git_icon.png",
-      "reference": "https://en.wikipedia.org/wiki/Git"
+      "reference": "https://git-scm.com/"
     },
     {
       "name": "Figma",
       "src": "../public/images/Skills/figma_icon.png",
-      "reference": "https://en.wikipedia.org/wiki/Figma"
+      "reference": "https://www.figma.com/"
     },
     {
       "name": "NPM",
       "src": "../public/images/Skills/npm-logo.png",
-      "reference": "https://en.wikipedia.org/wiki/Npm"
+      "reference": "https://www.npmjs.com/"
+    }
+  ],
+  "sub_skills": [
+    {
+      "name": "Emmet",
+      "reference": "https://emmet.io/"
+    },
+    {
+      "name": "Flexbox",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout"
+    },
+    {
+      "name": "Grid",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+    },
+    {
+      "name": "DOM Manipulation",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "name": "ES6+",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
+    },
+    {
+      "name": "Async/Await",
+      "reference": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises"
+    },
+    {
+      "name": "Fetch API",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+    },
+    {
+      "name": "Components",
+      "reference": "https://react.dev/learn/your-first-component"
+    },
+    {
+      "name": "Props",
+      "reference": "https://react.dev/learn/passing-props-to-a-component"
+    },
+    {
+      "name": "Hooks",
+      "reference": "https://react.dev/learn/hooks"
     }
   ]
 }
