@@ -100,5 +100,31 @@
       "name": "Hooks",
       "reference": "https://react.dev/learn/hooks"
     }
+  ],
+  "projects": [
+    {
+      "name": "css-gradient-generator",
+      "site": "https://css-gradient-generator.pages.dev/",
+      "git_link": "",
+      "image": "../public/images/Projects/CSS-Gen.png"
+    },
+    {
+      "name": "Gender Of Name",
+      "site": "https://gender-of-name.pages.dev/",
+      "git_link": "",
+      "image": "../public/images/Projects/gender-of-name.png"
+    },
+    {
+      "name": "Temperature Conversion",
+      "site": "https://temperature-conversion.pages.dev/",
+      "git_link": "",
+      "image": "../public/images/Projects/temperature-conversion.png"
+    },
+    {
+      "name": "TODO List",
+      "site": "https://modern-todo-list.pages.dev/",
+      "git_link": "",
+      "image": "../public/images/Projects/TODO-List.png"
+    }
   ]
 }
