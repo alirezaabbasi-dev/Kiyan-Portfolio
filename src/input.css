@@ -45,3 +45,7 @@ main section {
         @apply text-xl font-semibold text-slate-300 mb-4;
     }
 }
+
+.animElem {
+    @apply absolute h-full z-10 cursor-pointer rounded-md bg-slate-300/15 transition-all;
+}

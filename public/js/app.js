@@ -3,6 +3,8 @@ let $ = document;
 
 const skillsContainer = $.querySelector("#skills-container");
 const projectsContainer = $.querySelector("#projects-container");
+const menuItems = $.querySelectorAll("#menu li");
+const animElem = $.querySelector(".animElem");
 
 async function getDataUserInfoFromAPI(api) {
   if (!skillsContainer) {
@@ -52,15 +54,17 @@ async function getDataUserInfoFromAPI(api) {
                 <!--! texts -->
                 <div class="flex flex-col items-center capitalize *:w-fit *:transition-colors">
                     <h5 class="text-2xl lg:text-3xl font-bold my-3 text-slate-500 hover:text-slate-600 ">
-                        <a title="${item.name}" href="${item.site}" target="_blank">${item.name}</a>
+                        <a title="${item.name}" href="${
+          item.site
+        }" target="_blank">${item.name}</a>
                     </h5>
                     <p class="text-xl md:text-2xl text-slate-300 flex gap-2 items-center tracking-widest hover:text-slate-600">
                         <svg class="w-6 h-6 fill-current">
                             <use href="#github" />
                         </svg>
-                        <a title="${"Go to "+ item.git_link}"  href="${
-                          item?.git_link || ""
-                        }" target="_blank">GitHub</a>
+                        <a title="${"Go to " + item.git_link}"  href="${
+          item?.git_link || ""
+        }" target="_blank">GitHub</a>
                     </p>
                 </div>
                 <!-- !texts -->
@@ -73,5 +77,12 @@ async function getDataUserInfoFromAPI(api) {
     console.error("❌ Failed to read local JSON file:", error);
   }
 }
+
+menuItems.forEach((menu) => {
+  menu.addEventListener("mouseenter", (event) => {
+    animElem.style.left = event.target.offsetLeft + "px";
+    animElem.style.width = event.target.offsetWidth + "px";
+  });
+});
 
 getDataUserInfoFromAPI("../src/data.json");
