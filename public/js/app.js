@@ -12,10 +12,6 @@ async function getDataUserInfoFromAPI(api) {
     const response = await fetch(api);
     const data = await response.json();
 
-    const titleElem = document.createElement("h4");
-    titleElem.innerHTML = "Skills";
-    skillsContainer.insertAdjacentElement("beforebegin", titleElem);
-
     data.skills.forEach((item) => {
       skillsContainer.insertAdjacentHTML(
         "beforeend",
