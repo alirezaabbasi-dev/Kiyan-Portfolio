@@ -19,7 +19,7 @@
     --font-inter: "inter";
     --font-BebasNeue-Regular: "BebasNeue-Regular";
 
-    --color-blue-350:#42A5F5;
+    --color-blue-350: #42a5f5;
 }
 @utility container {
     @apply mx-auto px-1.5 md:px-6;

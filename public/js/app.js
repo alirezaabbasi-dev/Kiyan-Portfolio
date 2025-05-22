@@ -1,6 +1,8 @@
+"use strict";
 let $ = document;
 
 const skillsContainer = $.querySelector("#skills-container");
+const projectsContainer = $.querySelector("#projects-container");
 
 async function getDataUserInfoFromAPI(api) {
   if (!skillsContainer) {
@@ -34,6 +36,37 @@ async function getDataUserInfoFromAPI(api) {
           </div>
         </a>
         `
+      );
+    });
+
+    data.projects.forEach((item) => {
+      projectsContainer.insertAdjacentHTML(
+        "beforeend",
+        `
+            <!--* project start -->
+            <div
+                class="w-1/2 pb-8 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border-4 border-slate-700 shadow-2xl shadow-blue-950 overflow-hidden">
+                <div class="overflow-hidden">
+                    <img src="${item.image}" loading="lazy" alt="">
+                </div>
+                <!--! texts -->
+                <div class="flex flex-col items-center capitalize *:w-fit *:transition-colors">
+                    <h5 class="text-2xl lg:text-3xl font-bold my-3 text-slate-500 hover:text-slate-600 ">
+                        <a title="${item.name}" href="${item.site}" target="_blank">${item.name}</a>
+                    </h5>
+                    <p class="text-xl md:text-2xl text-slate-300 flex gap-2 items-center tracking-widest hover:text-slate-600">
+                        <svg class="w-6 h-6 fill-current">
+                            <use href="#github" />
+                        </svg>
+                        <a title="${"Go to "+ item.git_link}"  href="${
+                          item?.git_link || ""
+                        }" target="_blank">GitHub</a>
+                    </p>
+                </div>
+                <!-- !texts -->
+            </div>
+            <!--* project end -->
+          `
       );
     });
   } catch (error) {
