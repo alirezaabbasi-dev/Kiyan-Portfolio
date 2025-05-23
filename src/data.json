@@ -103,27 +103,27 @@
   ],
   "projects": [
     {
-      "name": "css-gradient-generator",
+      "name": "css gradient generator",
       "site": "https://css-gradient-generator.pages.dev/",
-      "git_link": "",
+      "git_link": "https://github.com/alirezaabbasi-dev/CSS-Gradient-Generator",
       "image": "../public/images/Projects/CSS-Gen.png"
     },
     {
       "name": "Gender Of Name",
       "site": "https://gender-of-name.pages.dev/",
-      "git_link": "",
+      "git_link": "https://github.com/alirezaabbasi-dev/Gender-of-name",
       "image": "../public/images/Projects/gender-of-name.png"
     },
     {
       "name": "Temperature Conversion",
       "site": "https://temperature-conversion.pages.dev/",
-      "git_link": "",
+      "git_link": "https://github.com/alirezaabbasi-dev/Temperature-conversion",
       "image": "../public/images/Projects/temperature-conversion.png"
     },
     {
       "name": "TODO List",
       "site": "https://modern-todo-list.pages.dev/",
-      "git_link": "",
+      "git_link": "https://github.com/alirezaabbasi-dev/modern-todo-list",
       "image": "../public/images/Projects/TODO-List.png"
     }
   ]
