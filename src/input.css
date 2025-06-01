@@ -1,51 +1,54 @@
 /* Font Faces */
 @font-face {
-    font-family: "inter";
-    src: local("inter-Regular"), url("../fonts/Inter/Inter_28pt-Regular.ttf"), format("truetype");
+  font-family: "inter";
+  src: local("inter-Regular"), url("../fonts/Inter/Inter_28pt-Regular.ttf"),
+    format("truetype");
 }
 @font-face {
-    font-family: "Poppins";
-    src: local("Poppins-Regular"), url("../fonts/Poppins/Poppins-Regular.ttf"), format("truetype");
+  font-family: "Poppins";
+  src: local("Poppins-Regular"), url("../fonts/Poppins/Poppins-Regular.ttf"),
+    format("truetype");
 }
 @font-face {
-    font-family: "BebasNeue-Regular";
-    src: local("BebasNeue-Regular"), url("../fonts/BebasNeue/BebasNeue-Regular.ttf"), format("truetype");
+  font-family: "BebasNeue-Regular";
+  src: local("BebasNeue-Regular"),
+    url("../fonts/BebasNeue/BebasNeue-Regular.ttf"), format("truetype");
 }
 /* Tailwind Configs */
 @import "tailwindcss";
 
 @theme {
-    --font-poppins: "Poppins";
-    --font-inter: "inter";
-    --font-BebasNeue-Regular: "BebasNeue-Regular";
+  --font-poppins: "Poppins";
+  --font-inter: "inter";
+  --font-BebasNeue-Regular: "BebasNeue-Regular";
 
-    --color-blue-350: #42a5f5;
+  --color-blue-350: #42a5f5;
 }
 @utility container {
-    @apply mx-auto px-1.5 md:px-6;
+  @apply mx-auto px-1.5 md:px-6;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-    @apply bg-slate-900 text-zinc-50 font-poppins;
+  @apply bg-slate-900 text-zinc-50 font-poppins;
 }
 section {
-    @apply my-15;
+  @apply my-15;
 }
 main section {
-    @apply pb-12 border-b-1 border-slate-700;
+  @apply pb-12 border-b-1 border-slate-700;
 }
 /* Components */
 @layer components {
-    .section-head-text {
-        @apply font-BebasNeue-Regular tracking-wide font-light text-center text-5xl text-slate-500 mb-15;
-    }
-    .footer-items-head-text {
-        @apply text-xl font-semibold text-slate-300 mb-4;
-    }
+  .section-head-text {
+    @apply font-BebasNeue-Regular tracking-wide font-light text-center text-5xl text-slate-500 mb-15;
+  }
+  .footer-items-head-text {
+    @apply text-xl font-semibold text-slate-300 mb-4;
+  }
 }
 
 .animElem {
-    @apply absolute h-full z-10 cursor-pointer rounded-md bg-slate-300/15 transition-all;
+  @apply absolute h-full z-10 cursor-pointer rounded-md bg-slate-300/15 transition-all;
 }
