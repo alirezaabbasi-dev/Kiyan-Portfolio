@@ -33,9 +33,10 @@
     <!-- Favicon and Styles -->
     <link rel="icon" type="image/png" href="./public/images/kiyan-icon.png" />
     <link rel="stylesheet" href="./public/styles/app.css">
+    <link rel="stylesheet" href="./packages/scripts/animate.min.css">
 </head>
 
-<body>
+<body class="wow animate__animated animate__zoomInDown">
     <!-- svg -->
     <svg class="hidden">
         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram" fill="currentcolor">
@@ -117,7 +118,7 @@
                 </div>
                 <!-- skills wrapper -->
                 <div id="skills-container"
-                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  md:gap-4 lg:gap-6  *:hover:-translate-y-2 *:hover:shadow-2xl *:transition-all  ">
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  md:gap-4 lg:gap-6  *:hover:-translate-y-2 *:hover:shadow-2xl *:transition-all wow animate__animated animate__slideInRight ">
                     <!-- skills items -->
                 </div>
             </div>
@@ -130,12 +131,12 @@
                     <h3 class="section-head-text">Project's</h3>
                 </div>
                 <div id="projects-container"
-                    class="grid grid-cols-1 h-full mb-50 md:grid-cols-2 gap-5 *:w-full *:h-fit md:*:even:translate-y-20">
+                    class="grid grid-cols-1 h-full mb-50 md:grid-cols-2 gap-5 *:w-full *:h-fit md:*:even:translate-y-20 wow animate__animated animate__zoomIn">
                 </div>
             </div>
 
         </section>
-        <section id="about" class="border-none bg-gradient-to-t">
+        <section id="about" class="border-none bg-gradient-to-t wow animate__animated animate__slideInLeft">
             <div class="container px-20">
                 <div>
                     <h3 class="section-head-text">About Me</h3>
@@ -157,7 +158,7 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer  class="bg-gradient-to-t from-slate-900 to-slate-950 text-slate-300 pt-12 pb-6 border-t-1 border-slate-700">
+    <footer class="bg-gradient-to-t from-slate-900 to-slate-950 text-slate-300 pt-12 pb-6 border-t-1 border-slate-700 wow animate__animated animate__zoomIn">
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <!-- About -->
             <div>
@@ -241,6 +242,10 @@
             .start();
     </script>
     <script src="./public/js/app.js"></script>
+    <script src="./Packages/scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
