@@ -79,7 +79,7 @@ async function getDataUserInfoFromAPI(api) {
           item.name
         }</a>
             </h5>
-            <p class="text-xl md:text-2xl text-slate-300 flex gap-2 items-center tracking-widest hover:text-slate-600">
+            <p class="bg-slate-700 rounded-sm rounded-tl-2xl rounded-br-2xl  text-xl md:text-2xl text-slate-300 flex gap-2 p-1.5 items-center tracking-widest cursor-pointer hover:text-slate-900">
               <svg class="w-6 h-6 fill-current">
                 <use href="#github" />
               </svg>
