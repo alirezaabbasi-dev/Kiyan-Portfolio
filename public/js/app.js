@@ -43,10 +43,12 @@ async function getDataUserInfoFromAPI(api) {
       skillsContainer.insertAdjacentHTML(
         "beforeend",
         `
-        <a class="skill-link" target="_blank" href="${item.reference}">
+        <a class="skill-link transition-all ease-linear duration-200 delay-100 hover:opacity-80" target="_blank" href="${
+          item.reference
+        }">
           <div class="max-w-160 h-85 rounded-xl shadow-md bg-gradient-to-t from-slate-800 to-slate-700 shadow-slate-800 border-1 border-slate-600">
-            <div class="h-[70%] bg-white rounded-2xl overflow-hidden">
-              <img loading="lazy" class="block sm:w-full h-full object-contain md:object-cover mx-auto" src="${
+            <div class="h-[70%] bg-slate-700 rounded-2xl overflow-hidden">
+              <img loading="lazy" class="block p-3 sm:w-full h-full object-contain  mx-auto" src="${
                 item.src
               }" alt="">
             </div>

@@ -3,37 +3,37 @@
     {
       "name": "HTML",
       "level": "advanced",
-      "src": "../public/images/Skills/html-logo.png",
+      "src": "../public/images/Skills/HTML.svg",
       "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML"
     },
     {
       "name": "CSS",
       "level": "advanced",
-      "src": "../public/images/Skills/CSS3_logo.png",
+      "src": "../public/images/Skills/Css.svg",
       "reference": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
       "name": "JavaScript",
       "level": "advanced",
-      "src": "../public/images/Skills/JavaScript-logo.png",
+      "src": "../public/images/Skills/JS.svg",
       "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
       "name": "Tailwind CSS",
       "level": "advanced",
-      "src": "../public/images/Skills/tailwindcss-logo.png",
+      "src": "../public/images/Skills/TailwindCss.svg",
       "reference": "https://tailwindcss.com/"
     },
     {
       "name": "React",
       "level": "learning",
-      "src": "../public/images/Skills/React_icon.png",
+      "src": "../public/images/Skills/React.svg",
       "reference": "https://react.dev/"
     },
     {
       "name": "Next JS",
       "level": "learning",
-      "src": "../public/images/Skills/nextjs.jpeg",
+      "src": "../public/images/Skills/NextJs.svg",
       "reference": "https://nextjs.org/"
     }
   ],
