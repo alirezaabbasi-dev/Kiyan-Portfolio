@@ -52,3 +52,21 @@ main section {
 .animElem {
   @apply absolute h-full z-10 cursor-pointer rounded-md bg-slate-300/15 transition-all;
 }
+#sub-skills {
+  @apply flex justify-center items-center h-60;
+}
+/* Swiper */
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  width: auto !important;
+}
+
+.swiper-slide img {
+  height: 120px;
+  display: block;
+  margin-right: 16px;
+}

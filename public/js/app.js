@@ -5,6 +5,7 @@ const skillsContainer = $.querySelector("#skills-container");
 const projectsContainer = $.querySelector("#projects-container");
 const menuItems = $.querySelectorAll("#menu li");
 const animElem = $.querySelector(".animElem");
+const swiperWrapper = $.querySelector(".swiper-wrapper");
 
 const sectionIDs = ["skills", "projects", "about"];
 let sectionOffsets = [];
@@ -92,6 +93,16 @@ async function getDataUserInfoFromAPI(api) {
           </div>
         </div>
         `
+      );
+    });
+
+    data.sub_skills.forEach((item) => {
+      console.log(data);
+      swiperWrapper.insertAdjacentHTML(
+        "beforeend",
+        `
+        <div class="swiper-slide w-14 object-contain bg-slate-100 flex items-center justify-center p-8 rounded-3xl"><img src="${item.img}" alt="${item.name}"/></div>
+          `
       );
     });
 

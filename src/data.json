@@ -19,12 +19,6 @@
       "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
-      "name": "Tailwind CSS",
-      "level": "advanced",
-      "src": "../public/images/Skills/TailwindCss.svg",
-      "reference": "https://tailwindcss.com/"
-    },
-    {
       "name": "React",
       "level": "learning",
       "src": "../public/images/Skills/React.svg",
@@ -35,70 +29,78 @@
       "level": "learning",
       "src": "../public/images/Skills/NextJs.svg",
       "reference": "https://nextjs.org/"
-    }
-  ],
-  "tools": [
-    {
-      "name": "VS Code",
-      "src": "../public/images/Skills/Visual_Studio_Code_logo.png",
-      "reference": "https://code.visualstudio.com/"
     },
     {
-      "name": "Git",
-      "src": "../public/images/Skills/Git_icon.png",
-      "reference": "https://git-scm.com/"
+      "name": "Type Script",
+      "level": "learning",
+      "src": "../public/images/Skills/TS.svg",
+      "reference": "https://www.typescriptlang.org/"
     },
     {
-      "name": "Figma",
-      "src": "../public/images/Skills/figma_icon.png",
-      "reference": "https://www.figma.com/"
+      "name": "Node Js",
+      "level": "learning",
+      "src": "../public/images/Skills/NodeJS.svg",
+      "reference": "https://nodejs.org/en"
     },
     {
-      "name": "NPM",
-      "src": "../public/images/Skills/npm-logo.png",
-      "reference": "https://www.npmjs.com/"
+      "name": "Tailwind CSS",
+      "level": "advanced",
+      "src": "../public/images/Skills/TailwindCss.svg",
+      "reference": "https://tailwindcss.com/"
+    },
+    {
+      "name": "Bootstrap",
+      "level": "Medium",
+      "src": "../public/images/Skills/BootStrap.svg",
+      "reference": "https://getbootstrap.com/"
+    },
+    {
+      "name": "MUI",
+      "level": "Medium",
+      "src": "../public/images/Skills/MUI.svg",
+      "reference": "https://mui.com/"
     }
   ],
   "sub_skills": [
     {
+      "name": "Redux",
+      "img": "../public/images/Skills/Sub/Redux.svg"
+    },
+    {
       "name": "Emmet",
-      "reference": "https://emmet.io/"
+      "img": "../public/images/Skills/Sub/emmet.svg"
     },
     {
-      "name": "Flexbox",
-      "reference": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout"
+      "name": "WebPack",
+      "img": "../public/images/Skills/Sub/Webpack.svg"
     },
     {
-      "name": "Grid",
-      "reference": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+      "name": "VS Code",
+      "img": "../public/images/Skills/Visual_Studio_Code_logo.png"
     },
     {
-      "name": "DOM Manipulation",
-      "reference": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+      "name": "Git",
+      "img": "../public/images/Skills/Git_icon.png"
     },
     {
-      "name": "ES6+",
-      "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
+      "name": "Figma",
+      "img": "../public/images/Skills/figma_icon.png"
     },
     {
-      "name": "Async/Await",
-      "reference": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises"
+      "name": "NPM",
+      "img": "../public/images/Skills/npm-logo.png"
     },
     {
-      "name": "Fetch API",
-      "reference": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+      "name": "FireBase",
+      "img": "../public/images/Skills/Sub/firebase.svg"
     },
     {
-      "name": "Components",
-      "reference": "https://react.dev/learn/your-first-component"
+      "name": "Vite",
+      "img": "../public/images/Skills/Sub/vite.svg"
     },
     {
-      "name": "Props",
-      "reference": "https://react.dev/learn/passing-props-to-a-component"
-    },
-    {
-      "name": "Hooks",
-      "reference": "https://react.dev/learn/hooks"
+      "name": "Ubuntu",
+      "img": "../public/images/Skills/Sub/ubuntu.svg"
     }
   ],
   "projects": [
