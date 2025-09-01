@@ -101,7 +101,7 @@ async function getDataUserInfoFromAPI(api) {
       swiperWrapper.insertAdjacentHTML(
         "beforeend",
         `
-        <div class="swiper-slide w-14 object-contain bg-slate-100 flex items-center justify-center p-8 rounded-3xl"><img src="${item.img}" alt="${item.name}"/></div>
+        <div class="size-50 object-contain bg-slate-600 flex items-center justify-center p-10 rounded-2xl"><img src="${item.img}" alt="${item.name}"/></div>
           `
       );
     });

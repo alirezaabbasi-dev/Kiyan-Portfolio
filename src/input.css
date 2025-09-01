@@ -56,17 +56,17 @@ main section {
   @apply flex justify-center items-center h-60;
 }
 /* Swiper */
-.swiper {
-  width: 100%;
-  overflow: hidden;
+.swiper-wrapper {
+  position: relative;
+  width: max-content;
+  animation: slide 50s linear infinite;
 }
 
-.swiper-slide {
-  width: auto !important;
-}
-
-.swiper-slide img {
-  height: 120px;
-  display: block;
-  margin-right: 16px;
+@keyframes slide {
+  0% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
 }
