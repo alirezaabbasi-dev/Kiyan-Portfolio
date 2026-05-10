@@ -20,13 +20,13 @@
     },
     {
       "name": "React",
-      "level": "learning",
+      "level": "advanced",
       "src": "../public/images/Skills/React.svg",
       "reference": "https://react.dev/"
     },
     {
       "name": "Next JS",
-      "level": "learning",
+      "level": "advanced",
       "src": "../public/images/Skills/NextJs.svg",
       "reference": "https://nextjs.org/"
     },
@@ -38,7 +38,7 @@
     },
     {
       "name": "Node Js",
-      "level": "learning",
+      "level": "Medium",
       "src": "../public/images/Skills/NodeJS.svg",
       "reference": "https://nodejs.org/en"
     },
