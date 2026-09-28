@@ -1,256 +1,411 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0f172b">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172b" />
 
     <!-- Primary Meta Tags -->
     <title>Kiyan Abbasi | Front-End Developer Portfolio</title>
-    <meta name="title" content="Kiyan Abbasi | Front-End Developer Portfolio">
-    <meta name="description"
-        content="Portfolio of Kiyan Abbasi, a front-end developer skilled in HTML, CSS, JavaScript, React, and modern web design.">
-    <meta name="keywords"
-        content="Kiyan Abbasi, Front-End Developer, Web Developer, HTML, CSS, JavaScript, React, Portfolio">
-    <meta name="author" content="Kiyan Abbasi">
+    <meta name="title" content="Kiyan Abbasi | Front-End Developer Portfolio" />
+    <meta
+      name="description"
+      content="Portfolio of Kiyan Abbasi, a front-end developer skilled in HTML, CSS, JavaScript, React, and modern web design."
+    />
+    <meta
+      name="keywords"
+      content="Kiyan Abbasi, Front-End Developer, Web Developer, HTML, CSS, JavaScript, React, Portfolio"
+    />
+    <meta name="author" content="Kiyan Abbasi" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kiyan-abbasi-portfolio.pages.dev/">
-    <meta property="og:title" content="Kiyan Abbasi | Front-End Developer Portfolio">
-    <meta property="og:description"
-        content="Explore projects, skills, and contact information of Kiyan Abbasi, a passionate front-end developer.">
-    <meta property="og:image" content="https://kiyan-abbasi-portfolio.pages.dev/public/images/kiyan-icon.png">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://kiyan-abbasi-portfolio.pages.dev/"
+    />
+    <meta
+      property="og:title"
+      content="Kiyan Abbasi | Front-End Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore projects, skills, and contact information of Kiyan Abbasi, a passionate front-end developer."
+    />
+    <meta
+      property="og:image"
+      content="https://kiyan-abbasi-portfolio.pages.dev/public/images/kiyan-icon.png"
+    />
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://kiyan-abbasi-portfolio.pages.dev/">
-    <meta name="twitter:title" content="Kiyan Abbasi | Front-End Developer Portfolio">
-    <meta name="twitter:description"
-        content="Explore projects, skills, and contact information of Kiyan Abbasi, a passionate front-end developer.">
-    <meta name="twitter:image" content="https://kiyan-abbasi-portfolio.pages.dev/public/images/kiyan-icon.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://kiyan-abbasi-portfolio.pages.dev/"
+    />
+    <meta
+      name="twitter:title"
+      content="Kiyan Abbasi | Front-End Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore projects, skills, and contact information of Kiyan Abbasi, a passionate front-end developer."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kiyan-abbasi-portfolio.pages.dev/public/images/kiyan-icon.png"
+    />
 
     <!-- Favicon and Styles -->
     <link rel="icon" type="image/png" href="./public/images/kiyan-icon.png" />
-    <link rel="stylesheet" href="./public/styles/app.css">
-    <link rel="stylesheet" href="./packages/scripts/animate.min.css">
-    <link rel="stylesheet" href="./packages/swiper.min.css">
-</head>
+    <link rel="stylesheet" href="./public/styles/app.css" />
+    <link rel="stylesheet" href="./packages/scripts/animate.min.css" />
+    <link rel="stylesheet" href="./packages/swiper.min.css" />
+  </head>
 
-<body>
+  <body>
     <!-- svg -->
     <svg class="hidden">
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram" fill="currentcolor">
-            <path
-                d="M11.9962 0.0078125C8.73824 0.0078125 8.32971 0.021622 7.05019 0.080003C5.77333 0.138241 4.90129 0.341051 4.13824 0.637622C3.34938 0.944146 2.68038 1.35434 2.01343 2.02124C1.34652 2.68819 0.936333 3.35719 0.629809 4.14605C0.333238 4.9091 0.130429 5.78115 0.0721905 7.058C0.0138095 8.33753 0 8.74605 0 12.0041C0 15.262 0.0138095 15.6705 0.0721905 16.9501C0.130429 18.2269 0.333238 19.099 0.629809 19.862C0.936333 20.6509 1.34652 21.3199 2.01343 21.9868C2.68038 22.6537 3.34938 23.0639 4.13824 23.3705C4.90129 23.667 5.77333 23.8698 7.05019 23.9281C8.32971 23.9864 8.73824 24.0002 11.9962 24.0002C15.2542 24.0002 15.6627 23.9864 16.9422 23.9281C18.2191 23.8698 19.0911 23.667 19.8542 23.3705C20.643 23.0639 21.312 22.6537 21.979 21.9868C22.6459 21.3199 23.0561 20.6509 23.3627 19.862C23.6592 19.099 23.862 18.2269 23.9202 16.9501C23.9786 15.6705 23.9924 15.262 23.9924 12.0041C23.9924 8.74605 23.9786 8.33753 23.9202 7.058C23.862 5.78115 23.6592 4.9091 23.3627 4.14605C23.0561 3.35719 22.6459 2.68819 21.979 2.02124C21.312 1.35434 20.643 0.944146 19.8542 0.637622C19.0911 0.341051 18.2191 0.138241 16.9422 0.080003C15.6627 0.021622 15.2542 0.0078125 11.9962 0.0078125ZM11.9962 2.16929C15.1993 2.16929 15.5788 2.18153 16.8437 2.23924C18.0133 2.29257 18.6485 2.488 19.0712 2.65229C19.6312 2.86991 20.0308 3.12986 20.4506 3.54967C20.8704 3.96943 21.1303 4.36905 21.348 4.929C21.5122 5.35172 21.7077 5.98691 21.761 7.15653C21.8187 8.42148 21.831 8.80091 21.831 12.0041C21.831 15.2071 21.8187 15.5866 21.761 16.8515C21.7077 18.0211 21.5122 18.6563 21.348 19.0791C21.1303 19.639 20.8704 20.0386 20.4506 20.4584C20.0308 20.8782 19.6312 21.1381 19.0712 21.3558C18.6485 21.5201 18.0133 21.7155 16.8437 21.7688C15.579 21.8265 15.1996 21.8388 11.9962 21.8388C8.79286 21.8388 8.41352 21.8265 7.14871 21.7688C5.97909 21.7155 5.3439 21.5201 4.92119 21.3558C4.36124 21.1381 3.96162 20.8782 3.54186 20.4584C3.1221 20.0386 2.8621 19.639 2.64448 19.0791C2.48019 18.6563 2.28476 18.0211 2.23143 16.8515C2.17371 15.5866 2.16148 15.2071 2.16148 12.0041C2.16148 8.80091 2.17371 8.42148 2.23143 7.15653C2.28476 5.98691 2.48019 5.35172 2.64448 4.929C2.8621 4.36905 3.12205 3.96943 3.54186 3.54967C3.96162 3.12986 4.36124 2.86991 4.92119 2.65229C5.3439 2.488 5.97909 2.29257 7.14871 2.23924C8.41367 2.18153 8.7931 2.16929 11.9962 2.16929ZM11.9962 16.0028C9.78776 16.0028 7.99748 14.2125 7.99748 12.0041C7.99748 9.79558 9.78776 8.00529 11.9962 8.00529C14.2047 8.00529 15.995 9.79558 15.995 12.0041C15.995 14.2125 14.2047 16.0028 11.9962 16.0028ZM11.9962 5.84381C8.594 5.84381 5.836 8.60181 5.836 12.0041C5.836 15.4062 8.594 18.1642 11.9962 18.1642C15.3984 18.1642 18.1564 15.4062 18.1564 12.0041C18.1564 8.60181 15.3984 5.84381 11.9962 5.84381ZM18.3998 7.03996C19.1949 7.03996 19.8394 6.39548 19.8394 5.60043C19.8394 4.80538 19.1949 4.16086 18.3998 4.16086C17.6048 4.16086 16.9603 4.80538 16.9603 5.60043C16.9603 6.39548 17.6048 7.03996 18.3998 7.03996Z" />
-        </symbol>
-        <symbol id="telegram" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" version="1.1" viewBox="0 0 24 24">
-            <path
-                d="M19.2,4.4L2.9,10.7c-1.1,0.4-1.1,1.1-0.2,1.3l4.1,1.3l1.6,4.8c0.2,0.5,0.1,0.7,0.6,0.7c0.4,0,0.6-0.2,0.8-0.4  c0.1-0.1,1-1,2-2l4.2,3.1c0.8,0.4,1.3,0.2,1.5-0.7l2.8-13.1C20.6,4.6,19.9,4,19.2,4.4z M17.1,7.4l-7.8,7.1L9,17.8L7.4,13l9.2-5.8  C17,6.9,17.4,7.1,17.1,7.4z" />
-        </symbol>
-        <symbol id="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" version="1.1">
-            </defs>
-            <g stroke="none" stroke-width="1" fill="currentcolor">
-                <g transform="translate(-140.000000, -7559.000000)" fill="currentcolor">
-                    <g transform="translate(56.000000, 160.000000)">
-                        <path
-                            d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399">
-
-                        </path>
-                    </g>
-                </g>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        id="instagram"
+        fill="currentcolor"
+      >
+        <path
+          d="M11.9962 0.0078125C8.73824 0.0078125 8.32971 0.021622 7.05019 0.080003C5.77333 0.138241 4.90129 0.341051 4.13824 0.637622C3.34938 0.944146 2.68038 1.35434 2.01343 2.02124C1.34652 2.68819 0.936333 3.35719 0.629809 4.14605C0.333238 4.9091 0.130429 5.78115 0.0721905 7.058C0.0138095 8.33753 0 8.74605 0 12.0041C0 15.262 0.0138095 15.6705 0.0721905 16.9501C0.130429 18.2269 0.333238 19.099 0.629809 19.862C0.936333 20.6509 1.34652 21.3199 2.01343 21.9868C2.68038 22.6537 3.34938 23.0639 4.13824 23.3705C4.90129 23.667 5.77333 23.8698 7.05019 23.9281C8.32971 23.9864 8.73824 24.0002 11.9962 24.0002C15.2542 24.0002 15.6627 23.9864 16.9422 23.9281C18.2191 23.8698 19.0911 23.667 19.8542 23.3705C20.643 23.0639 21.312 22.6537 21.979 21.9868C22.6459 21.3199 23.0561 20.6509 23.3627 19.862C23.6592 19.099 23.862 18.2269 23.9202 16.9501C23.9786 15.6705 23.9924 15.262 23.9924 12.0041C23.9924 8.74605 23.9786 8.33753 23.9202 7.058C23.862 5.78115 23.6592 4.9091 23.3627 4.14605C23.0561 3.35719 22.6459 2.68819 21.979 2.02124C21.312 1.35434 20.643 0.944146 19.8542 0.637622C19.0911 0.341051 18.2191 0.138241 16.9422 0.080003C15.6627 0.021622 15.2542 0.0078125 11.9962 0.0078125ZM11.9962 2.16929C15.1993 2.16929 15.5788 2.18153 16.8437 2.23924C18.0133 2.29257 18.6485 2.488 19.0712 2.65229C19.6312 2.86991 20.0308 3.12986 20.4506 3.54967C20.8704 3.96943 21.1303 4.36905 21.348 4.929C21.5122 5.35172 21.7077 5.98691 21.761 7.15653C21.8187 8.42148 21.831 8.80091 21.831 12.0041C21.831 15.2071 21.8187 15.5866 21.761 16.8515C21.7077 18.0211 21.5122 18.6563 21.348 19.0791C21.1303 19.639 20.8704 20.0386 20.4506 20.4584C20.0308 20.8782 19.6312 21.1381 19.0712 21.3558C18.6485 21.5201 18.0133 21.7155 16.8437 21.7688C15.579 21.8265 15.1996 21.8388 11.9962 21.8388C8.79286 21.8388 8.41352 21.8265 7.14871 21.7688C5.97909 21.7155 5.3439 21.5201 4.92119 21.3558C4.36124 21.1381 3.96162 20.8782 3.54186 20.4584C3.1221 20.0386 2.8621 19.639 2.64448 19.0791C2.48019 18.6563 2.28476 18.0211 2.23143 16.8515C2.17371 15.5866 2.16148 15.2071 2.16148 12.0041C2.16148 8.80091 2.17371 8.42148 2.23143 7.15653C2.28476 5.98691 2.48019 5.35172 2.64448 4.929C2.8621 4.36905 3.12205 3.96943 3.54186 3.54967C3.96162 3.12986 4.36124 2.86991 4.92119 2.65229C5.3439 2.488 5.97909 2.29257 7.14871 2.23924C8.41367 2.18153 8.7931 2.16929 11.9962 2.16929ZM11.9962 16.0028C9.78776 16.0028 7.99748 14.2125 7.99748 12.0041C7.99748 9.79558 9.78776 8.00529 11.9962 8.00529C14.2047 8.00529 15.995 9.79558 15.995 12.0041C15.995 14.2125 14.2047 16.0028 11.9962 16.0028ZM11.9962 5.84381C8.594 5.84381 5.836 8.60181 5.836 12.0041C5.836 15.4062 8.594 18.1642 11.9962 18.1642C15.3984 18.1642 18.1564 15.4062 18.1564 12.0041C18.1564 8.60181 15.3984 5.84381 11.9962 5.84381ZM18.3998 7.03996C19.1949 7.03996 19.8394 6.39548 19.8394 5.60043C19.8394 4.80538 19.1949 4.16086 18.3998 4.16086C17.6048 4.16086 16.9603 4.80538 16.9603 5.60043C16.9603 6.39548 17.6048 7.03996 18.3998 7.03996Z"
+        />
+      </symbol>
+      <symbol
+        id="telegram"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentcolor"
+        version="1.1"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19.2,4.4L2.9,10.7c-1.1,0.4-1.1,1.1-0.2,1.3l4.1,1.3l1.6,4.8c0.2,0.5,0.1,0.7,0.6,0.7c0.4,0,0.6-0.2,0.8-0.4  c0.1-0.1,1-1,2-2l4.2,3.1c0.8,0.4,1.3,0.2,1.5-0.7l2.8-13.1C20.6,4.6,19.9,4,19.2,4.4z M17.1,7.4l-7.8,7.1L9,17.8L7.4,13l9.2-5.8  C17,6.9,17.4,7.1,17.1,7.4z"
+        />
+      </symbol>
+      <symbol
+        id="github"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        version="1.1"
+      >
+        <g stroke="none" stroke-width="1" fill="currentcolor">
+          <g
+            transform="translate(-140.000000, -7559.000000)"
+            fill="currentcolor"
+          >
+            <g transform="translate(56.000000, 160.000000)">
+              <path
+                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+              ></path>
             </g>
-        </symbol>
-        <symbol id="mail" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.3"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-        </symbol>
-
+          </g>
+        </g>
+      </symbol>
+      <symbol
+        id="mail"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.3"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+        id="arrow-top-right-on-square"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+        id="code-bracket"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+        />
+      </symbol>
     </svg>
     <!-- Header -->
-    <header class="">
-        <!-- Header Navigation -->
-        <section class="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-slate-800/70 shadow-md !mt-0">
-            <div class="container mx-auto px-6 py-4 flex items-center justify-between">
-                <!-- Logo -->
-                <a href="#"
-                    class="font-inter text-2xl sm:text-3xl font-bold tracking-[.40rem] uppercase text-blue-200 hover:text-blue-500 transition-colors">
-                    Kiyan
-                </a>
-                <!-- Main Navigation -->
-                <nav>
-                    <ul id="menu"
-                        class="flex items-center gap-1 sm:gap-6 text-slate-300 text-sm sm:text-base font-medium *:font-BebasNeue-Regular *:text-[16px] sm:*:text-xl  *:tracking-widest *:hover:text-slate-100 *:transition-colors relative *:z-20">
-                        <div class="animElem"></div>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+    <header>
+      <!-- Header Navigation -->
+      <section
+        class="fixed top-0 inset-x-0 z-50 backdrop-blur-3xl bg-black/40 shadow-md !mt-0"
+      >
+        <div
+          class="container mx-auto px-6 py-4 flex items-center justify-between"
+        >
+          <!-- Logo -->
+          <a
+            href="#"
+            class="font-inter text-2xl sm:text-3xl font-bold tracking-[.40rem] uppercase text-zinc-200 hover:text-zinc-500 transition-colors"
+          >
+            Kiyan
+          </a>
+          <!-- Main Navigation -->
+          <nav>
+            <ul
+              id="menu"
+              class="flex items-center gap-1 sm:gap-6 text-zinc-300 text-sm sm:text-base font-medium *:font-BebasNeue-Regular *:text-[16px] sm:*:text-xl *:tracking-widest *:hover:text-zinc-100 *:transition-colors relative *:z-20"
+            >
+              <div class="animElem"></div>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
 
-
-        <!-- header content wrapper -->
-        <section id="particle-js" class="bg-[#131e31] relative h-225 sm:h-screen !mt-0 ">
-            <div
-                class="container pointer-events-none absolute inset-0  flex flex-col gap-4 lg:flex-row justify-between items-center m-auto h-max mt-48 lg:mt-auto">
-                <div class="relative overflow-hidden rounded-full border-3 border-blue-300 shadow-xl shadow-slate-400 ">
-                    <img class="" id="profile-pic" src="./public/images/Kiyan-Pic.jpg" alt="User Picture">
-                    <span class="block absolute top-0 right-0 left-0 bottom-0 size-full bg-blue-350/5"></span>
-                </div>
-                <div class="w-full md:w-1/2 ">
-                    <h3 id="head-text"
-                        class="font-inter text-slate-400 text-center text-4xl sm:text-4xl lg:h-36 mt-20 lg:mt-auto lg:text-7xl leading-12 lg:leading-22">
-                        Hi
-                        There ...</h3>
-                </div>
-            </div>
-        </section>
-
+      <!-- header content wrapper -->
+      <section
+        id="particle-js"
+        class="bg-black/90 relative h-225 sm:h-screen !mt-0"
+      >
+        <div
+          class="container pointer-events-none absolute inset-0 flex flex-col gap-4 lg:flex-row justify-between items-center m-auto h-max mt-48 lg:mt-auto"
+        >
+          <div
+            class="relative overflow-hidden rounded-full md:max-w-1/2 border-4 shadow-2xl shadow-yellow-900"
+          >
+            <img
+              class="size-full md:scale-75"
+              id="profile-pic"
+              src="./public/images/Kiyan-Pic.png"
+              alt="Kiyan's Photo"
+            />
+            <span
+              class="block absolute top-0 right-0 left-0 bottom-0 size-full bg-zinc-950/20"
+            ></span>
+          </div>
+          <div class="w-full md:w-1/2">
+            <h3
+              id="head-text"
+              class="font-inter text-zinc-400 text-center text-4xl sm:text-4xl lg:h-36 mt-20 lg:mt-auto lg:text-7xl leading-12 lg:leading-22"
+            >
+              Hi There ...
+            </h3>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- Main -->
     <main>
-        <section id="skills">
-            <div class="container">
-                <div>
-                    <h3 class="section-head-text">My Skills</h3>
-                </div>
-                <!-- skills wrapper -->
-                <div id="skills-container"
-                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  md:gap-4 lg:gap-6  *:hover:-translate-y-2 *:hover:shadow-2xl *:transition-all wow animate__animated animate__slideInRight ">
-                    <!-- skills items -->
-                </div>
-            </div>
-        </section>
-        <section id="sub-skills">
-                <div class="swiper-wrapper flex items-center justify-center gap-10 px-8 py-10">
-                </div>
-        </section>
-        <section id="projects">
-            <div class="container">
-                <div>
-                    <h3 class="section-head-text">Project's</h3>
-                </div>
-                <div id="projects-container"
-                    class="grid grid-cols-1 h-full mb-50 md:grid-cols-2 gap-5 *:w-full *:h-fit md:*:even:translate-y-20 wow animate__animated animate__zoomIn">
-                </div>
-            </div>
-
-        </section>
-        <section id="about" class="border-none bg-gradient-to-t wow animate__animated animate__slideInLeft">
-            <div class="container px-20">
-                <div>
-                    <h3 class="section-head-text">About Me</h3>
-                </div>
-                <p class="sm:block text-sm text-slate-300 text-justify tracking-wide leading-7 overflow-ellipsis">
-                    I'm really
-                    passionate about
-                    programming and technology. I love building
-                    things, solving problems, and constantly learning new stuff. So far, I've learned HTML, CSS
-                    (including Flexbox and Grid), and I'm confident with JavaScript as well. I've also been diving
-                    into Git for version control and recently started learning React to take my frontend skills to
-                    the next level.
-
-                    Programming has become more than just a hobby for me — it's something I enjoy doing every day,
-                    and I'm always looking for ways to improve and grow as a developer. I'm especially interested in
-                    web development and working on personal projects that challenge me and help me learn.
-                </p>
-            </div>
-        </section>
+      <section id="skills">
+        <div class="container">
+          <div>
+            <h3 class="section-head-text">My Skills</h3>
+          </div>
+          <!-- skills wrapper -->
+          <div
+            id="skills-container"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-4 lg:gap-6 *:hover:-tranzinc-y-2 *:hover:shadow-2xl *:transition-all wow animate__animated animate__slideInRight"
+          >
+            <!-- skills items -->
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="container">
+          <div>
+            <h3 class="section-head-text">Project's</h3>
+          </div>
+          <div
+            id="projects-container"
+            class="grid grid-cols-1 h-full mb-50 md:grid-cols-2 gap-5 *:w-full *:h-fit md:*:even:tranzinc-y-20 wow animate__animated animate__zoomIn"
+          ></div>
+        </div>
+      </section>
+      <section
+        id="about"
+        class="border-none bg-gradient-to-t wow animate__animated animate__slideInLeft"
+      >
+        <div class="container px-20">
+          <div>
+            <h3 class="section-head-text">About Me</h3>
+          </div>
+          <p
+            class="sm:block text-sm lg:text-lg text-zinc-300 text-center md:text-justify tracking-wide leading-6 md:leading-8 overflow-ellipsis"
+          >
+            I'm really passionate about programming and technology. I love
+            building things, solving problems, and constantly learning new
+            stuff. So far, I've learned HTML, CSS (including Flexbox and Grid),
+            and I'm confident with JavaScript as well. I've also been diving
+            into Git for version control and recently started learning React to
+            take my frontend skills to the next level. Programming has become
+            more than just a hobby for me — it's something I enjoy doing every
+            day, and I'm always looking for ways to improve and grow as a
+            developer. I'm especially interested in web development and working
+            on personal projects that challenge me and help me learn.
+          </p>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer
-        class="bg-gradient-to-t from-slate-900 to-slate-950 text-slate-300 pt-12 pb-6 border-t-1 border-slate-700 wow animate__animated animate__zoomIn">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            <!-- About -->
-            <div>
-                <h4 class="footer-items-head-text">About Me</h4>
-                <p class="text-sm leading-6 text-slate-400">
-                    I'm Kiyan Abbasi, a passionate frontend developer focused on modern web design and creative coding.
-                    I love learning, building, and sharing ideas.
-                </p>
-            </div>
-
-            <!-- Navigation Links -->
-            <div>
-                <h4 class="footer-items-head-text">Quick Links</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#skills" class="hover:text-blue-400 transition-colors">My Skills</a></li>
-                    <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
-                    <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact Me</a></li>
-                </ul>
-            </div>
-
-            <!-- Social Media -->
-            <div id="contact">
-                <h4 class="footer-items-head-text">Follow Me</h4>
-                <div class="flex items-center justify-center md:justify-start gap-4">
-                    <a href="http://github.com/alirezaabbasi-dev" target="_blank" title="GitHub"
-                        class="hover:text-white">
-                        <svg class="w-6 h-6 fill-current text-slate-400 hover:text-zinc-600 transition-colors">
-                            <use href="#github" />
-                        </svg>
-                    </a>
-                    <a href="mailto:alirezaabbasi001@outlook.com" title="Email" class="hover:text-white">
-                        <svg class="w-8 h-8 fill-current text-slate-400 hover:text-sky-500 transition-colors">
-                            <use href="#mail" />
-                        </svg>
-                    </a>
-                    <a href="#" title="Instagram" class="hover:text-white">
-                        <svg class="w-6 h-6 fill-current text-slate-400 hover:text-pink-400 transition-colors">
-                            <use href="#instagram" />
-                        </svg>
-                    </a>
-                    <a href="https://t.me/kiyan_abbasi_dev" target="_blank" title="Telegram" class="hover:text-white">
-                        <svg class="w-8 h-8 fill-current text-slate-400 hover:text-blue-600 transition-colors">
-                            <use href="#telegram" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
+      class="bg-black text-zinc-300 pt-12 pb-6 border-t-1 border-zinc-700 wow animate__animated animate__zoomIn"
+    >
+      <div
+        class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+      >
+        <!-- About -->
+        <div>
+          <h4 class="footer-items-head-text">About Me</h4>
+          <p class="text-sm leading-6 text-zinc-400">
+            I'm Kiyan Abbasi, a passionate frontend developer focused on modern
+            web design and creative coding. I love learning, building, and
+            sharing ideas.
+          </p>
         </div>
 
-        <!-- Footer Bottom -->
-        <div class="mt-10 border-t border-slate-700 pt-4 text-center text-sm text-slate-500">
-            <p>© 2025 Created with ❤️ by <span class="text-white font-medium">Kiyan Abbasi</span>. All rights reserved.
-            </p>
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-items-head-text">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#skills" class="hover:text-yellow-700 transition-colors"
+                >My Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="hover:text-yellow-700 transition-colors"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-yellow-700 transition-colors"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
         </div>
+
+        <!-- Social Media -->
+        <div id="contact">
+          <h4 class="footer-items-head-text">Follow Me</h4>
+          <div class="flex items-center justify-center md:justify-start gap-4">
+            <a
+              href="https://github.com/alirezaabbasi-dev"
+              target="_blank"
+              title="GitHub"
+              class="hover:text-white"
+            >
+              <svg
+                class="w-6 h-6 fill-current text-slate-400 hover:text-zinc-600 transition-colors"
+              >
+                <use href="#github" />
+              </svg>
+            </a>
+            <a
+              href="mailto:alirezaabbasi001@outlook.com"
+              title="Email"
+              class="hover:text-white"
+            >
+              <svg
+                class="w-8 h-8 fill-current text-zinc-400 hover:text-sky-500 transition-colors"
+              >
+                <use href="#mail" />
+              </svg>
+            </a>
+            <a href="#" title="Instagram" class="hover:text-white">
+              <svg
+                class="w-6 h-6 fill-current text-zinc-400 hover:text-pink-400 transition-colors"
+              >
+                <use href="#instagram" />
+              </svg>
+            </a>
+            <a
+              href="https://t.me/kiyan_abbasi_dev"
+              target="_blank"
+              title="Telegram"
+              class="hover:text-white"
+            >
+              <svg
+                class="w-8 h-8 fill-current text-zinc-400 hover:text-blue-600 transition-colors"
+              >
+                <use href="#telegram" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div
+        class="mt-10 border-t border-zinc-700 pt-4 text-center text-sm text-zinc-500"
+      >
+        <p>
+          © <span id="now-time"></span> Created with ❤️ by
+          <a
+            href="https://github.com/alirezaabbasi-dev"
+            class="text-white font-medium hover:opacity-70 transition-opacity duration-200"
+            target="_blank"
+            >Kiyan Abbasi</a
+          >. All rights reserved.
+        </p>
+      </div>
     </footer>
     <!-- Scripts -->
     <script src="./packages/scripts/particle.min.js"></script>
     <script>
-        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-        particlesJS.load("particle-js", "./packages/scripts/particle.json")
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+      particlesJS.load("particle-js", "./packages/scripts/particle.json");
     </script>
     <script src="./packages/scripts/typewriter.min.js"></script>
     <script>
-        let app = document.getElementById('head-text');
+      let app = document.getElementById("head-text");
 
-        let typewriter = new Typewriter(app, {
-            loop: true,
-            delay: 75,
-        });
+      let typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75,
+      });
 
-        typewriter
-
-            .typeString('Hi There . . .')
-            .pauseFor(2500)
-            .deleteChars(5)
-            .typeString('<strong class="text-red-500">I\'m Kiyan Abbasi</strong>')
-            .pauseFor(1000)
-            .deleteChars(29)
-            .typeString('<strong>front-end Developer.</strong>')
-            .pauseFor(2000)
-            .start();
+      typewriter
+        .typeString("Hi There . . .")
+        .pauseFor(2500)
+        .deleteChars(5)
+        .typeString('<strong class="text-zinc-200">I\'m Kiyan Abbasi</strong>')
+        .pauseFor(1000)
+        .deleteChars(29)
+        .typeString(
+          '<p><span class="text-green-700">MERN</span> Stack Developer.</p>',
+        )
+        .pauseFor(2000)
+        .start();
     </script>
     <script src="./public/js/app.js"></script>
     <script src="./Packages/scripts/wow.min.js"></script>
     <script>
-        new WOW().init();
+      new WOW().init();
+      const nowTimeElem = document.getElementById("now-time");
+      nowTimeElem.innerText = new Date().getFullYear();
     </script>
-</body>
-
+  </body>
 </html>

@@ -31,7 +31,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  @apply bg-slate-900 text-zinc-50 font-poppins;
+  @apply bg-black text-zinc-100 font-poppins;
   overflow-x: hidden
 }
 section {
@@ -43,15 +43,15 @@ main section {
 /* Components */
 @layer components {
   .section-head-text {
-    @apply font-BebasNeue-Regular tracking-wide font-light text-center text-5xl text-slate-500 mb-15;
+    @apply font-BebasNeue-Regular tracking-wide font-light text-center text-5xl text-zinc-500 mb-15;
   }
   .footer-items-head-text {
-    @apply text-xl font-semibold text-slate-300 mb-4;
+    @apply text-xl font-semibold text-zinc-300 mb-4;
   }
 }
 
 .animElem {
-  @apply absolute h-full z-10 cursor-pointer rounded-md bg-slate-300/15 transition-all;
+  @apply absolute h-full z-10 cursor-pointer rounded-md  transition-all;
 }
 #sub-skills {
   @apply flex justify-center items-center h-60;

@@ -46,24 +46,24 @@ async function getDataUserInfoFromAPI(api) {
         `
         <a class="skill-link transition-all ease-linear duration-200 delay-100 hover:opacity-80" target="_blank" href="${
           item.reference
-        }">
-          <div class="max-w-160 h-85 rounded-xl shadow-md bg-gradient-to-t from-slate-800 to-slate-700 shadow-slate-800 border-1 border-slate-600">
-            <div class="h-[70%] bg-slate-700 rounded-2xl overflow-hidden">
-              <img loading="lazy" class="block p-3 sm:w-full h-full object-contain  mx-auto" src="${
+        }" title="Go to the ${item.name} Documentation">
+          <div class="max-w-160 h-85 rounded-xl shadow-lg bg-gradient-to-t from-zinc-950 to-zinc-900 shadow-zinc-900">
+            <div class="h-[70%] bg-zinc-900 rounded-2xl overflow-hidden p-10">
+              <img loading="lazy" class="block  sm:w-full h-full object-contain  mx-auto" src="${
                 item.src
-              }" alt="">
+              }" alt=${item.name + " " + item.level}>
             </div>
             <div class="px-4 text-center mt-4">
-              <h5 class="font-inter text-xl text-slate-300 font-bold tracking-wider">${
+              <h5 class="font-inter text-xl text-zinc-300 font-bold tracking-wider">${
                 item.name
               }</h5>
-              <p class="text-sm text-slate-400 mt-2">
+              <p class="text-sm text-zinc-400 mt-2">
                 ${item.level ? `Level: ${item.level}` : ""}
               </p>
             </div>
           </div>
         </a>
-        `
+        `,
       );
     });
 
@@ -72,27 +72,37 @@ async function getDataUserInfoFromAPI(api) {
       projectsContainer.insertAdjacentHTML(
         "beforeend",
         `
-        <div class="w-1/2 pb-8 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border-4 border-slate-700 shadow-2xl shadow-blue-950 overflow-hidden">
+        <div class="w-1/2 pb-8 rounded-2xl bg-black border-4 border-zinc-300 shadow-xl shadow-yellow-950 overflow-hidden">
           <div class="overflow-hidden">
             <img src="${item.image}" loading="lazy" alt="">
           </div>
           <div class="flex flex-col items-center capitalize *:w-fit *:transition-colors">
-            <h5 class="text-2xl lg:text-3xl font-bold my-3 text-slate-500 hover:text-slate-600">
+            <h5 class="text-2xl lg:text-3xl font-bold my-5 text-zinc-500 hover:text-zinc-600">
               <a title="${item.name}" href="${item.site}" target="_blank">${
-          item.name
-        }</a>
+                item.name
+              }</a>
             </h5>
-            <p class="bg-slate-700 rounded-sm rounded-tl-2xl rounded-br-2xl  text-xl md:text-2xl text-slate-300 flex gap-2 p-1.5 items-center tracking-widest cursor-pointer hover:text-slate-900">
-              <svg class="w-6 h-6 fill-current">
-                <use href="#github" />
-              </svg>
-              <a title="Go to ${item.git_link}" href="${
-          item.git_link || "#"
-        }" target="_blank">GitHub</a>
-            </p>
+            <div class="flex gap-2">
+              <p class="bg-zinc-400 rounded-xl text-lg md:text-xl text-black flex gap-2 p-1 items-center tracking-widest cursor-pointer hover:text-zinc-800">
+                <svg class="w-6 h-6 fill-current">
+                <use href="#arrow-top-right-on-square" />
+                </svg>
+                <a title="Go to ${item.site}" href="${
+                  item.site || "#"
+                }" target="_blank">Live Preview</a>
+              </p>
+              <p class="bg-zinc-400 rounded-xl text-lg md:text-xl text-black flex gap-2 p-1 items-center tracking-widest cursor-pointer hover:text-zinc-800">
+                <svg class="w-6 h-6 fill-current">
+                  <use href="#code-bracket" />
+                </svg>
+                <a title="Go to ${item.git_link}" href="${
+                  item.git_link || "#"
+                }" target="_blank">Source</a>
+              </p>
+            </div>
           </div>
         </div>
-        `
+        `,
       );
     });
 
@@ -102,7 +112,7 @@ async function getDataUserInfoFromAPI(api) {
         "beforeend",
         `
         <div class="size-50 object-contain bg-slate-600 flex items-center justify-center p-10 rounded-2xl"><img src="${item.img}" alt="${item.name}"/></div>
-          `
+          `,
       );
     });
 
